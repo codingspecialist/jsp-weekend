@@ -1,0 +1,15 @@
+package com.cos;
+
+public class Test {
+	
+	public int getData() {
+		
+		return 1;
+	}
+	
+	public static void main(String[] args) {
+		Test t = new Test();
+		int num = t.getData();
+		System.out.println(num);
+	}
+}

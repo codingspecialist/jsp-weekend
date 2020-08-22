@@ -1,0 +1,13 @@
+package javaproject;
+
+// ctrl + shift + s
+public class HelloWorld {
+	
+	public static void 회원가입() {
+		System.out.println("회원가입 완료");
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

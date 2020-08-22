@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2534858520.index
+\cos\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2324648336.index
+\cos\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1683323417.index
+\cos\src
