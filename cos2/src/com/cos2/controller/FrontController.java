@@ -1,6 +1,8 @@
 package com.cos2.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,8 +18,13 @@ public class FrontController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		HttpSession session = request.getSession();
 		String uri = request.getRequestURI();
-		System.out.println("요청 uri : "+uri);
+		
+		// 응답에 대한 한글 세팅
+		response.setContentType("text/html; charset=utf-8");
+		
 		if(uri.equals("/main.do")) {
 			System.out.println("GET: /main.do 요청");
 			response.sendRedirect("main.jsp");
@@ -29,16 +36,25 @@ public class FrontController extends HttpServlet {
 			response.sendRedirect("join.jsp");
 		}else if(uri.equals("/info.do")) {
 			System.out.println("GET: /info.do 요청");
-			response.sendRedirect("info.jsp");
+			if(session.getAttribute("auth") == null) {
+				PrintWriter out = response.getWriter();
+				out.print("<script>");
+				out.print("alert('인증되지 않은 사용자입니다');");
+				out.print("history.back();");
+				out.print("</script>");
+			}else {
+				response.sendRedirect("info.jsp");
+			}
 		}else if(uri.equals("/logout.do")) {
 			System.out.println("GET: /logout.do 요청");
-			HttpSession session = request.getSession();
 			session.invalidate();
 			response.sendRedirect("/main.jsp");
 		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		HttpSession session = request.getSession();
 		String uri = request.getRequestURI();
 		
 		if(uri.equals("/loginProc.do")) {
@@ -51,8 +67,7 @@ public class FrontController extends HttpServlet {
 			
 			// 아이디:ssar, 비번:1234 일때만 session에 저장
 			if(username.equals("ssar") && password.equals("1234")) {
-				HttpSession session = request.getSession();
-				session.setAttribute("username", username);
+				session.setAttribute("auth", true);
 			}
 
 			response.sendRedirect("main.jsp");
@@ -67,8 +82,7 @@ public class FrontController extends HttpServlet {
 			System.out.println("email : "+email);
 			
 			// 회원가입이 되면 session 저장
-			HttpSession session = request.getSession();
-			session.setAttribute("username", username);
+			session.setAttribute("auth", true);
 			response.sendRedirect("main.jsp");
 		}
 	}
