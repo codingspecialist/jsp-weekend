@@ -4,7 +4,7 @@
 <%@ include file="layout/header.jsp" %>
 
 <!-- form 태그는 데이터를 전송하기 위한 박스 --> 
-<form action="joinProc.jsp"  method="get">
+<form action="joinProc.jsp"  method="post">
 	<input type="text" name="username" placeholder="Username"/> <br/>
 	<input type="password" name="password"  placeholder="Password"/> <br/>
 	<input type="email" name="email" placeholder="Email"/> <br/>

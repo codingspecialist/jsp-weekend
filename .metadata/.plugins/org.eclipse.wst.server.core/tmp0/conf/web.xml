@@ -4722,5 +4722,18 @@
         <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-
+ 
+ 	<servlet>
+ 		<servlet-name>FrontController</servlet-name>
+ 		<servlet-class>com.cos2.controller.FrontController</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet-mapping>
+ 		<servlet-name>FrontController</servlet-name>
+ 		<url-pattern>*.do</url-pattern>
+ 	</servlet-mapping>
+    
 </web-app>
+
+
+

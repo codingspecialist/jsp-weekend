@@ -1,7 +1,13 @@
 INDEX VERSION 1.131
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2432346980.index
+\servlet-study\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1683323417.index
+\cos\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4104428505.index
+\cos2\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2534858520.index
 \cos\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2324648336.index
 \cos\src
-C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1683323417.index
-\cos\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\934841932.index
+\cos2\src
