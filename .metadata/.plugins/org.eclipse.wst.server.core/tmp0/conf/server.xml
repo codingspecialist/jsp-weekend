@@ -103,8 +103,8 @@
 				<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
 
-				<Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\cos2" path="" reloadable="true" source="org.eclipse.jst.jee.server:cos2"/>
-			</Host>
+				
+			<Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\cos3" path="/cos3" reloadable="true" source="org.eclipse.jst.jee.server:cos3"/></Host>
 		</Engine>
 	</Service>
 </Server>
