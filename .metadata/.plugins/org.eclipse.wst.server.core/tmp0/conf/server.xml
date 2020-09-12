@@ -104,7 +104,7 @@
 
 
 				
-			<Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\cos3" path="/cos3" reloadable="true" source="org.eclipse.jst.jee.server:cos3"/></Host>
+			<Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\blog" path="" reloadable="true" source="org.eclipse.jst.jee.server:blog"/></Host>
 		</Engine>
 	</Service>
 </Server>

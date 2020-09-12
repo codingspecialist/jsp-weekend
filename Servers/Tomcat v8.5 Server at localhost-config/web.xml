@@ -4630,16 +4630,6 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
-	<servlet>
-		<servlet-name>FrontController</servlet-name>
-		<servlet-class>com.cos2.controller.FrontController</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>FrontController</servlet-name>
-		<url-pattern>*.do</url-pattern>
-	</servlet-mapping>
-
 	<description>MySQL Test App</description>
 	<resource-ref>
 		<description>DB Connection</description>
@@ -4647,6 +4637,16 @@
 		<res-type>javax.sql.DataSource</res-type>
 		<res-auth>Container</res-auth>
 	</resource-ref>
+
+	<filter>
+		<filter-name>CharEncFilter</filter-name>
+		<filter-class>com.cos.blog.config.CharEncFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>CharEncFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
 </web-app>
 
