@@ -24,9 +24,7 @@ public class PostSaveProcAction implements Action {
 		String title = request.getParameter("title");
 		title = title.replaceAll("<", "&lt;");
 		title = title.replaceAll(">", "&gt;");
-		
 		int userId = Integer.parseInt(request.getParameter("userId"));
-		title = request.getParameter("title");
 		String content = request.getParameter("content");
 		
 		Post post = new Post(
