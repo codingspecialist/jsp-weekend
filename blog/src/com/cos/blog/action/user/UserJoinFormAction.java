@@ -1,10 +1,12 @@
-package com.cos.blog.action;
+package com.cos.blog.action.user;
 
 import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.cos.blog.action.Action;
 
 public class UserJoinFormAction implements Action{
 	@Override

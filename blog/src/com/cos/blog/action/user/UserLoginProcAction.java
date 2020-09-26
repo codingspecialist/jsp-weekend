@@ -1,4 +1,4 @@
-package com.cos.blog.action;
+package com.cos.blog.action.user;
 
 import java.io.IOException;
 
@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.cos.blog.action.Action;
 import com.cos.blog.dao.UserDao;
 import com.cos.blog.model.User;
 

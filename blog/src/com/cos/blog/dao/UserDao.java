@@ -10,6 +10,24 @@ import com.cos.blog.model.User;
 
 public class UserDao {
 
+	public int 회원수정(User user) {
+		String sql = "UPDATE user SET username=?, password=?, email=?, address=?, "
+				+ "createDate=now() WHERE id =?";
+		Connection conn = DBConn.getInstance();
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, user.getUsername());
+			pstmt.setString(2, user.getPassword());
+			pstmt.setString(3, user.getEmail());
+			pstmt.setString(4, user.getAddress());
+			pstmt.setInt(5, user.getId());
+			return pstmt.executeUpdate();			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return -1;
+	}
+	
 	public User 로그인(User user) {
 		String sql = "SELECT id, username, email, address FROM user WHERE username = ? AND password = ?";
 		Connection conn = DBConn.getInstance();
