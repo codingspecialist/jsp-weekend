@@ -38,10 +38,12 @@
 			return res.text();
 		})
 		.then(function(res){
-			console.log(res);
-			if(res != "fail"){
-                 var body = document.querySelector("body");
-                 body.innerHTML = res;
+			if(res=="ok"){
+				alert('삭제성공');
+				location.href="/";
+			}else{
+				alert('삭제실패');
+				history.back();
 			}
 		});
 		
