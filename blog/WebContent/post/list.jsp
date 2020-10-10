@@ -15,7 +15,7 @@
 		<div class="card col-md-12 m-2">
 			<div class="card-body">
 				<h4 class="card-title">${post.title}</h4>
-				<a href="#" class="btn btn-primary">상세보기</a>
+				<a href="/post?cmd=detail&id=${post.id}" class="btn btn-primary">상세보기</a>
 			</div>
 		</div>
 	</c:forEach>

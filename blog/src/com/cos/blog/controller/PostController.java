@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.cos.blog.action.Action;
+import com.cos.blog.action.post.PostDeleteProcAction;
+import com.cos.blog.action.post.PostDetailAction;
 import com.cos.blog.action.post.PostListAction;
 import com.cos.blog.action.post.PostSaveFormAction;
 import com.cos.blog.action.post.PostSaveProcAction;
@@ -39,6 +41,10 @@ public class PostController extends HttpServlet {
 			return new PostSaveFormAction();
 		} else if (cmd.equals("saveProc")) {
 			return new PostSaveProcAction();
+		} else if (cmd.equals("detail")) {
+			return new PostDetailAction();
+		} else if (cmd.equals("deleteProc")) {
+			return new PostDeleteProcAction();
 		} 
 		return null;
 	}
