@@ -88,14 +88,15 @@ public class PostDao {
 		return null;
 	}
 	
-	public List<Post> 글목록(){
+	public List<Post> 글목록(int page){
 		List<Post> posts = new ArrayList<>();
 		
-		String sql = "SELECT * FROM post ORDER BY id DESC";
+		String sql = "SELECT * FROM post ORDER BY id DESC limit ?, 3";
 		Connection conn = DBConn.getInstance();
 		
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, page);
 			ResultSet rs = pstmt.executeQuery();
 			
 			while(rs.next()) {
