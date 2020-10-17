@@ -21,7 +21,7 @@ public class PostDeleteProcAction implements Action {
 		PrintWriter pw = response.getWriter();
 		
 		// PostDao 연결
-		PostDao postDao = new PostDao();
+		PostDao postDao = PostDao.getInstance();
 		int result = postDao.삭제하기(id);
 		
 		if(result == 1) {

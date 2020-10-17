@@ -21,7 +21,7 @@ public class PostUpdateFormAction implements Action {
 		
 		int id = Integer.parseInt(request.getParameter("id"));
 		
-		PostDao postDao = new PostDao();
+		PostDao postDao = PostDao.getInstance();
 		Post postEntity = postDao.상세보기(id);
 		
 		request.setAttribute("post", postEntity);

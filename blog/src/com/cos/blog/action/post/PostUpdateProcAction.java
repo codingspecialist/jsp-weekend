@@ -27,13 +27,13 @@ public class PostUpdateProcAction implements Action {
 		title = title.replaceAll(">", "&gt;");
 		String content = request.getParameter("content");
 		
-		Post post = new Post(
-				id,
-				title,
-				content	
-		);
+		Post post = Post.builder()
+				.id(id)
+				.title(title)
+				.content(content)
+				.build();
 		
-		PostDao postDao = new PostDao();
+		PostDao postDao = PostDao.getInstance();
 		postDao.글수정하기(post);
 		
 		response.sendRedirect("index.jsp");

@@ -12,6 +12,13 @@ import com.cos.blog.model.Post;
 
 public class PostDao {
 	
+	private static PostDao instance = new PostDao();
+	public static PostDao getInstance() {
+		return instance;
+	}
+	
+	private PostDao() {}
+	
 	public int 글수정하기(Post post) {
 		String sql = "UPDATE post SET title = ?, content = ? WHERE id = ?";
 		Connection conn = DBConn.getInstance();
@@ -64,15 +71,16 @@ public class PostDao {
 			ResultSet rs = pstmt.executeQuery();
 			
 			if(rs.next()) {
-				Post post = new Post(
-						rs.getInt("id"),
-						rs.getString("title"),
-						rs.getString("content"),
-						rs.getInt("readCount"),
-						rs.getTimestamp("createDate"),
-						rs.getInt("userId")
-				);
-				return post;
+				Post postEntity = Post.builder()
+						.id(rs.getInt("id"))
+						.title(rs.getString("title"))
+						.content(rs.getString("content"))
+						.readCount(rs.getInt("readCount"))
+						.createDate(rs.getTimestamp("createDate"))
+						.userId(rs.getInt("userId"))
+						.build();
+				
+				return postEntity;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -91,15 +99,15 @@ public class PostDao {
 			ResultSet rs = pstmt.executeQuery();
 			
 			while(rs.next()) {
-				Post post = new Post(
-						rs.getInt("id"),
-						rs.getString("title"),
-						rs.getString("content"),
-						rs.getInt("readCount"),
-						rs.getTimestamp("createDate"),
-						rs.getInt("userId")
-				);
-				posts.add(post);
+				Post postEntity = Post.builder()
+						.id(rs.getInt("id"))
+						.title(rs.getString("title"))
+						.content(rs.getString("content"))
+						.readCount(rs.getInt("readCount"))
+						.createDate(rs.getTimestamp("createDate"))
+						.userId(rs.getInt("userId"))
+						.build();
+				posts.add(postEntity);
 			}
 			return posts;
 		} catch (Exception e) {

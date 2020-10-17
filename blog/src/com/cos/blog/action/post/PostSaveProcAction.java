@@ -27,14 +27,14 @@ public class PostSaveProcAction implements Action {
 		int userId = Integer.parseInt(request.getParameter("userId"));
 		String content = request.getParameter("content");
 		
-		Post post = new Post(
-				title,
-				content,
-				0,
-				userId
-		);
+		Post post = Post.builder()
+				.title(title)
+				.content(content)
+				.readCount(0)
+				.userId(userId)
+				.build();
 		
-		PostDao postDao = new PostDao();
+		PostDao postDao = PostDao.getInstance();
 		postDao.글쓰기(post);
 		
 		response.sendRedirect("index.jsp");

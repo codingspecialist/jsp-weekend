@@ -13,12 +13,13 @@ import com.cos.blog.model.User;
 
 public class UserLoginProcAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
-		User user = new User(
-				request.getParameter("username"),
-				request.getParameter("password")
-		);
+		User user = User.builder()
+				.username(request.getParameter("username"))
+				.password(request.getParameter("password"))
+				.build();
+
 		System.out.println(user);
-		UserDao userDao = new UserDao();
+		UserDao userDao = UserDao.getInstance();
 		User userEntity = userDao.로그인(user);
 		if(userEntity != null) {
 			HttpSession session = request.getSession();

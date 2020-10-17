@@ -16,7 +16,7 @@ public class PostListAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		PostDao postDao = new PostDao();
+		PostDao postDao = PostDao.getInstance();
 		List<Post> posts = postDao.글목록();
 		
 		request.setAttribute("posts", posts);
