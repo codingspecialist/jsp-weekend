@@ -12,6 +12,21 @@ import com.cos.blog.model.Post;
 
 public class PostDao {
 	
+	public int 글수정하기(Post post) {
+		String sql = "UPDATE post SET title = ?, content = ? WHERE id = ?";
+		Connection conn = DBConn.getInstance();
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, post.getTitle());
+			pstmt.setString(2, post.getContent());
+			pstmt.setInt(3, post.getId());
+			return pstmt.executeUpdate();			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return -1;
+	}
+	
 	public int 삭제하기(int id) {
 		String sql = "DELETE FROM post WHERE id = ?";
 		Connection conn = DBConn.getInstance();

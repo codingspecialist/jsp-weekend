@@ -14,6 +14,8 @@ import com.cos.blog.action.post.PostDetailAction;
 import com.cos.blog.action.post.PostListAction;
 import com.cos.blog.action.post.PostSaveFormAction;
 import com.cos.blog.action.post.PostSaveProcAction;
+import com.cos.blog.action.post.PostUpdateFormAction;
+import com.cos.blog.action.post.PostUpdateProcAction;
 
 // http://localhost:8080/blog/fd/fdas/fads/fsad.do
 // 모든 .do 요청은 FrontController를 탄다. 
@@ -45,6 +47,10 @@ public class PostController extends HttpServlet {
 			return new PostDetailAction();
 		} else if (cmd.equals("deleteProc")) {
 			return new PostDeleteProcAction();
+		} else if (cmd.equals("updateForm")) {
+			return new PostUpdateFormAction();
+		} else if (cmd.equals("updateProc")) {
+			return new PostUpdateProcAction();
 		} 
 		return null;
 	}
