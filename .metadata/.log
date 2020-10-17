@@ -7113,3 +7113,177 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.ui 2 2 2020-10-17 12:25:38.636
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 12:33:10.380
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 12:33:10.392
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 12:33:27.163
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 12:33:27.170
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:43:34.092
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.NIgaojZK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:43:34.104
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.NIgaojZK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:43:34.113
+!MESSAGE subsribers = {sts4.classpath.chzJYSKT=Send Classpath Notifications(91)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:43:34.122
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.NIgaojZK => OK
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 12:43:40.590
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 12:43:40.597
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:43.154
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:43.161
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7d14efc[org.springframework.tooling.boot.ls:1.20.0.202007271426(id=635)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:43.167
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.901
+!MESSAGE Boot LS startup time from start to initialized: 1728ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.928
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KVCaPUTKisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.934
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.940
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.947
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.953
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.961
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.968
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.973
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KVCaPUTK => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.978
+!MESSAGE classpath=51 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.985
+!MESSAGE buffering callback sts4.classpath.KVCaPUTK blog false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.990
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:44.995
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.000
+!MESSAGE buffering callback sts4.classpath.KVCaPUTK Test false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.005
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.010
+!MESSAGE classpath=48 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.017
+!MESSAGE buffering callback sts4.classpath.KVCaPUTK cos2 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.022
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.030
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.038
+!MESSAGE buffering callback sts4.classpath.KVCaPUTK demo-1 false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.043
+!MESSAGE executing callback sts4.classpath.KVCaPUTK 4 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-10-17 12:44:45.070
+!MESSAGE executing callback sts4.classpath.KVCaPUTK SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 2 0 2020-10-17 12:48:46.910
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:18:04.360
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:18:04.367
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:18:06.866
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:18:06.875
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:22:26.046
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:22:26.052
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:22:34.530
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:22:34.539
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:26:58.293
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:26:58.299
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:27:01.352
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:27:01.359
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:51:13.603
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 14:51:13.611
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 15:02:50.017
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 15:02:50.024
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 15:08:43.913
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-10-17 15:08:43.921
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
